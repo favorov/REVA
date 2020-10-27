@@ -1,8 +1,10 @@
 #' @import utils
 #' @import Rcpp
-#' @import Hmisc 
-#for errbar
-#library(GSReg)
+#' @importFrom GSReg GSReg.kendall.tau.distance
+##  ' @import Hmisc
+##
+#
+#
 
 REVAPvalue <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
   
