@@ -1,0 +1,25 @@
+Package: reva 
+Type: Package
+Title: Reva package -- is a scalar is clumpy? Let's answer from the scalar and a distance matrix.
+Version: 0.0.1
+Date: 2020-10-26
+Encoding: UTF-8
+Author@R: c(person("Bahman","Afsari", email="bahman.afsari@gmail.com"),
+			person("Alexander","Favorov",email = "favorov@sensi.org"),
+			person("Elana","J.","Fertig", email="elana.fertig@gmail.com"),
+			person("Leslie","Cope",email = "lcope1@jhmi.edu"),
+
+    )
+Author: Bahman Afsari, Alexander Favorov, Elana J. Fertig, Leslie Cope
+Maintainer: Alexander Favorov <favorov@sensi.org>
+Description: We have a distance matrix for a set of points and we have scalar value ascribeb for each point. We want to know is the scalar values are correlated if the points are close to each other or the scalar distribution is not distance-self-corelated. 
+License: Artistic-2.0
+LazyLoad: yes
+Depends: R (>= 3.0.0)
+biocViews: Annotation, StatisticalMethod, Infrastructure, DataRepresentation,
+    Bioinformatics
+URL: https://github.com/favorov/reva/R
+Packaged: 2020-10-20 07:07:07 EST; favorov
+Imports: Rcpp (>= 1.0.5)
+LinkingTo: Rcpp
+RoxygenNote: 7.1.1
