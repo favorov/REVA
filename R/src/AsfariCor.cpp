@@ -1,5 +1,5 @@
 #include <Rcpp.h>
-##include <math.h>
+#include <math.h>
 using namespace Rcpp;
 //' Describe the function
 //'

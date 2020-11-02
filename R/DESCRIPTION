@@ -8,7 +8,6 @@ Author@R: c(person("Bahman","Afsari", email="bahman.afsari@gmail.com"),
 			person("Alexander","Favorov",email = "favorov@sensi.org"),
 			person("Elana","J.","Fertig", email="elana.fertig@gmail.com"),
 			person("Leslie","Cope",email = "lcope1@jhmi.edu"),
-
     )
 Author: Bahman Afsari, Alexander Favorov, Elana J. Fertig, Leslie Cope
 Maintainer: Alexander Favorov <favorov@sensi.org>
