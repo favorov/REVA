@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // AfsariCorcpp
 double AfsariCorcpp(NumericVector x, NumericMatrix mydist);
-RcppExport SEXP _reva_AfsariCorcpp(SEXP xSEXP, SEXP mydistSEXP) {
+RcppExport SEXP _REVA_AfsariCorcpp(SEXP xSEXP, SEXP mydistSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // AfsariCorVarcpp
 double AfsariCorVarcpp(NumericMatrix mydist);
-RcppExport SEXP _reva_AfsariCorVarcpp(SEXP mydistSEXP) {
+RcppExport SEXP _REVA_AfsariCorVarcpp(SEXP mydistSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -30,7 +30,7 @@ END_RCPP
 }
 // AfsariCorVarcpp2
 NumericMatrix AfsariCorVarcpp2(NumericMatrix mydist);
-RcppExport SEXP _reva_AfsariCorVarcpp2(SEXP mydistSEXP) {
+RcppExport SEXP _REVA_AfsariCorVarcpp2(SEXP mydistSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -41,13 +41,13 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_reva_AfsariCorcpp", (DL_FUNC) &_reva_AfsariCorcpp, 2},
-    {"_reva_AfsariCorVarcpp", (DL_FUNC) &_reva_AfsariCorVarcpp, 1},
-    {"_reva_AfsariCorVarcpp2", (DL_FUNC) &_reva_AfsariCorVarcpp2, 1},
+    {"_REVA_AfsariCorcpp", (DL_FUNC) &_REVA_AfsariCorcpp, 2},
+    {"_REVA_AfsariCorVarcpp", (DL_FUNC) &_REVA_AfsariCorVarcpp, 1},
+    {"_REVA_AfsariCorVarcpp2", (DL_FUNC) &_REVA_AfsariCorVarcpp2, 1},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_reva(DllInfo *dll) {
+RcppExport void R_init_REVA(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

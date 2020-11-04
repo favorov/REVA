@@ -7,7 +7,7 @@
 #' 
 #' @return describe the return 
 AfsariCorcpp <- function(x, mydist) {
-    .Call('_reva_AfsariCorcpp', PACKAGE = 'reva', x, mydist)
+    .Call('_REVA_AfsariCorcpp', PACKAGE = 'REVA', x, mydist)
 }
 
 #' Describe the function
@@ -16,7 +16,7 @@ AfsariCorcpp <- function(x, mydist) {
 #' 
 #' @return describe the return 
 AfsariCorVarcpp <- function(mydist) {
-    .Call('_reva_AfsariCorVarcpp', PACKAGE = 'reva', mydist)
+    .Call('_REVA_AfsariCorVarcpp', PACKAGE = 'REVA', mydist)
 }
 
 #' Describe the function
@@ -25,6 +25,6 @@ AfsariCorVarcpp <- function(mydist) {
 #' 
 #' @return describe the return 
 AfsariCorVarcpp2 <- function(mydist) {
-    .Call('_reva_AfsariCorVarcpp2', PACKAGE = 'reva', mydist)
+    .Call('_REVA_AfsariCorVarcpp2', PACKAGE = 'REVA', mydist)
 }
 

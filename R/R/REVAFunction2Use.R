@@ -1,12 +1,11 @@
-#' @import utils
 #' @import Rcpp
 #' @importFrom GSReg GSReg.kendall.tau.distance
 ##  ' @import Hmisc
-##
+##  ' @inport utils
 #
 #
 
-REVAPvalue <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
+REVA.p.value <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
   
   reva <- AfsariCorcpp(x,mydist)
   if( nrow(mydist)  < sampleNum2EstVar ){
