@@ -1,10 +1,7 @@
 #' @import Rcpp
-#' @importFrom GSReg GSReg.kendall.tau.distance
-##  ' @import Hmisc
-##  ' @inport utils
 #
 #
-
+#' @export
 REVA.p.value <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
   
   reva <- AfsariCorcpp(x,mydist)
@@ -56,9 +53,15 @@ REVA.p.value <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
 ### and x must contain the corresponding scalars in the vector
 ## dist function must return a symmetric matrix with ncol = ncol matx 
 ## representing the distance between all pair of samples
+#' @importFrom bioDist tau.dist
+#
+#
 
+#' @export
 REVA.user.distance <- function(  x, matx, 
-                                 distfunc = GSReg:::GSReg.kendall.tau.distance, ...){
+                                 distfunc = function(m) 
+                                   as.matrix(bioDist:::tau.dist(t(m))), 
+                                 ...){
   
   intername <- intersect(names(x),colnames(matx))
   
@@ -66,13 +69,14 @@ REVA.user.distance <- function(  x, matx,
   
   
   
-  revaval <- REVAPvalue( x[intername] , mydist[intername,intername] )
+  revaval <- REVA.p.value( x[intername] , mydist[intername,intername] )
   revaval$dist <- mydist
   
   return(revaval)
   
 }
 
+#' @export
 REVA.user.distance.Geneset <- function( x, matxAll, genesetList = NULL,...){
   
   if(is.null(genesetList)){

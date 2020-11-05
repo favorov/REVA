@@ -1,8 +1,8 @@
 Package: REVA 
 Type: Package
 Title: Reva package -- is a scalar is clumpy? Let's answer from the scalar and a distance matrix.
-Version: 0.0.2
-Date: 2020-11-04
+Version: 0.0.3
+Date: 2020-11-05
 Encoding: UTF-8
 Author@R: c(person("Bahman","Afsari", email="bahman.afsari@gmail.com"),
 			person("Alexander","Favorov",email = "favorov@sensi.org"),
@@ -18,7 +18,7 @@ Depends: R (>= 3.0.0)
 biocViews: Annotation, StatisticalMethod, Infrastructure, DataRepresentation,
     Bioinformatics
 URL: https://github.com/favorov/reva/R
-Packaged: 2020-10-20 07:07:07 EST; favorov
+Packaged: 2020-11-05 07:07:07 EST; favorov
 Imports: Rcpp (>= 1.0.5)
 LinkingTo: Rcpp
 RoxygenNote: 7.1.1
