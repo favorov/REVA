@@ -1,8 +1,13 @@
 #' @import Rcpp
-#
-#
+# import description ends
+0
+
+#' REVA.test
+#' 
+#' The main function of the REVA package. Calculates REVA statistics for a set of scalar values for each point (x) and the distances between points (mydist) 
+#'
 #' @export
-REVA.p.value <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
+REVA.test <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
   
   reva <- AfsariCorcpp(x,mydist)
   if( nrow(mydist)  < sampleNum2EstVar ){

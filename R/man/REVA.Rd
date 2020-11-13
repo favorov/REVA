@@ -11,7 +11,7 @@ Main function:
 }
 \section{REVA functions}{
 
-REVA.p.value calculates the p-value corresponding to the null
+REVA.test calculates the p-value corresponding to the null
 REVA.user.distance calculate distance as Kendall tau and calculate the p-value	
 REVA.user.distance.Geneset does something
 }
