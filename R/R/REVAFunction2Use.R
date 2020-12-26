@@ -1,11 +1,11 @@
 #' @import Rcpp
 # import description ends
-0
+NULL
 
-#' REVA.test
-#' 
-#' The main function of the REVA package. Calculates REVA statistics for a set of scalar values for each point (x) and the distances between points (mydist) 
-#'
+#' @title REVA.test
+#' @description The main function of the REVA package. Calculates REVA statistics for a set of scalar values for each point (x) and the distances between points (mydist) 
+#' @param x vector of scalar values associated with the points
+#' @param mydist the distances between the points
 #' @export
 REVA.test <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
   
@@ -44,13 +44,8 @@ REVA.test <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
   varapp3 <- varapp2 + 4/3/nrow(mydist)^3
   pvalue <- pnorm(reva ,mean = 1/3, sd = sqrt(max(varapp3,1e-6)),lower.tail = F) 
   return(list(reva = reva,
-              varapp = varapp,
-              varapp2 = varapp2,
-              varapp3 = varapp3,
-              medianCount = medianCount,
-              medianCount2 = medianCount2,
+              var = varapp3,
               pvalue = pvalue))
-  
 }
 
 
