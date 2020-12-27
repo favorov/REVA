@@ -6,6 +6,18 @@
 \usage{
 REVA.test(x, mydist, sampleNum2EstVar = 100, permsN = 10)
 }
+\arguments{
+\item{x}{vector of scalar values associated with the points}
+
+\item{mydist}{the distances between the points}
+
+\item{sampleNum2EstVar}{if the number of samples (e.g. \code{lengths(x)}) is larger or equal to this value, the variance will be estimated by subsampling to \code{sampleNum2EstVar}}
+
+\item{permsN}{number of subsampling estimations to average}
+}
+\value{
+a list with \code{reva}, \code{var} and \code{pvalue} fields for the REVA statistics values, the variance estimation and the p-value of REVA test
+}
 \description{
 The main function of the REVA package. Calculates REVA statistics for a set of scalar values for each point (x) and the distances between points (mydist)
 }

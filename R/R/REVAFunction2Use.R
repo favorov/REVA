@@ -6,8 +6,11 @@ NULL
 #' @description The main function of the REVA package. Calculates REVA statistics for a set of scalar values for each point (x) and the distances between points (mydist) 
 #' @param x vector of scalar values associated with the points
 #' @param mydist the distances between the points
+#' @param sampleNum2EstVar if the number of samples (e.g. \code{lengths(x)}) is larger or equal to this value, the variance will be estimated by subsampling to \code{sampleNum2EstVar}
+#' @param permsN number of subsampling estimations to average
+#' @return a list with \code{reva}, \code{var} and \code{pvalue} fields for the REVA statistics values, the variance estimation and the p-value of REVA test
 #' @export
-REVA.test <- function(x,mydist, sampleNum2EstVar = 100, permsN = 10){
+REVA.test <- function(x, mydist, sampleNum2EstVar = 100, permsN = 10){
   
   reva <- AfsariCorcpp(x,mydist)
   if( nrow(mydist)  < sampleNum2EstVar ){
