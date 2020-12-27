@@ -1,0 +1,14 @@
+citHeader("To cite the the REVA package in publications use:")
+
+citEntry(
+	entry="Article",title = "REVA: a rank-based multi-dimensional measure of correlation", 
+	author = personList(
+		as.person("Bahman Afsari"),
+		as.person("Alexander Favorov"),
+		as.person("Elana J. Fertig")	
+		as.person("Leslie M. Cope")	
+),
+url= "https://www.biorxiv.org/content/10.1101/330498v1"
+)
+
+
