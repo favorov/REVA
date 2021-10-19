@@ -19,6 +19,6 @@ biocViews: Annotation, StatisticalMethod, Infrastructure, DataRepresentation,
     Bioinformatics
 URL: https://github.com/favorov/reva/R
 Packaged: 2020-11-05 07:07:07 EST; favorov
-Imports: Rcpp (>= 1.0.5)
+Imports: Rcpp (>= 1.0.5), bioDist
 LinkingTo: Rcpp
 RoxygenNote: 7.1.1
